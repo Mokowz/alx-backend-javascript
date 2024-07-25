@@ -2,9 +2,9 @@
 /* eslint-disable no-underscore-dangle */
 export default class HolbertonCourse {
   constructor(name, length, students) {
-    this._name = name;
-    this._length = length;
-    this._students = students;
+    this.name = name;
+    this.length = length;
+    this.students = students;
   }
 
   // Name
@@ -23,7 +23,7 @@ export default class HolbertonCourse {
   }
 
   set length(val) {
-    if (typeof val !== 'number') { throw new TypeError('LEngth must be a number'); }
+    if (typeof val !== 'number') { throw new TypeError('Length must be a number'); }
     this._length = val;
   }
 
